@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BIGBAG</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/favicon.png">
+</head>
+
+<body>
+    <header>
+    <div class="container-fluid bg-dark header-top d-none d-md-block" id="header-top">
+        <div class="container">
+            <div class="row text-light" style="color: white">
+                <div class="col-md-4">
+                    <p>
+                        <a href="#"><i class="fab fa-twitter"></i></a> &nbsp;
+                        <a href="#"><i class="fab fa-facebook-f"></i></a> &nbsp;
+                        <a href="#"><i class="far fa-life-ring"></i></a> &nbsp;
+                        <a href="#"><i class="fab fa-vimeo-v"></i></a> &nbsp;
+                        <a href="#"><i class="fab fa-tumblr"></i></a> &nbsp;
+                    </p>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+                <!--<div class="col-md-1 ml-auto top-head"> <a  href="#">Login </a></div>
+                <div class="col-md-2 ml-auto top-head"><a  href="#">Create Account</a></div>-->
+
+                <div class="col-md-3 mr-auto top-head"><a  href="#" data-toggle="modal" data-target="#login" >Log in</a>
+                    <small>or</small>
+                    <a  href="#" data-toggle="modal" data-target="#create-account">Create Account</a>
+                    <a  href="#" class="search"><i class="fas fa-search"></i></a></div>
+                <!--<div class="col-md-1 mr-auto top-head"><a  href="#"><i class="fas fa-search"></i></a></div>-->
+                <div class="col-md-1 ml-auto top-head last"> <a  href="#"><i class="fas fa-shopping-cart"></i>&dollar;0</a></div>
+            </div>
+        </div>
+    </div>
+    <!--Login Modal Strats-->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Enter Email</label>
+                                <input id="email" type="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input id="password" type="password" class="form-control">
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input checked" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Remember me
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container">
+                        <button type="button" class="btn" data-dismiss="modal">create an account</button>
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Forget Password?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal Ends-->
+
+    <!--Create Account Modal Strats-->
+    <div class="modal fade" id="create-account" tabindex="-1" role="dialog" aria-labelledby="create-accountLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="create-accountLabel">Log in</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label for="create-account-email">Enter Email</label>
+                                <input id="create-account-email" type="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="create-account-password">Password</label>
+                                <input id="create-account-password" type="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="create-account-confirm-password">Confirm Password</label>
+                                <input id="create-account-confirm-password" type="password" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container">
+                        <button type="button" class="btn" data-dismiss="modal">Sign Up</button>
+                        <button type="button" class="btn btn-link" data-dismiss="modal">New User?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Create Account Modal Ends-->
+
+    <div id="header-nav">
+        <nav class="container navbar navbar-expand-lg bg-white sticky-top"  id="navbar-main">
+            <a href="#" class="navbar-brand"><img src="image/favicon.png" alt="logo image" class="img-fluid"/>  BIG<span style="color: #97d8dc">BAG</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Blog
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="blog-detail.html">Recent Posts</a>
+                            <a class="dropdown-item" href="blog-detail.html">Recent Posts</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="blog-detail.html">Detail Blog</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="blog.html">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section id="blog-header-bottom">
+            <div class="breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-md-6 col-sm-12 ">
+                            <h2>Blog Left Sidebar</h2>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <ol class="breadcrumb float-right">
+                                <li><a href="index.html">Home</a></li>
+                                <span style="color: #969696;">\</span>
+                                <li class="active">Blog left Sider</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="blog-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 side-bar">
+                        <!--<div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon3">
+                            <a href="#" class="input-group-addon" id="basic-addon3"><i class="fas fa-search"></i></a>
+                        </div>-->
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-info" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Category</div>
+                        <div class="card-body text-primary">
+                            <p class="card-text"><a href="#"><i class="fas fa-caret-right"></i> Accesories (6)</a></p>
+                            <p class="card-text"><a href="#"><i class="fas fa-caret-right"></i> Bags (6)</a></p>
+                            <p class="card-text"><a href="#"><i class="fas fa-caret-right"></i> Cloths (25)</a></p>
+                            <p class="card-text"><a href="#"><i class="fas fa-caret-right"></i> Bed &amp; Bath (2)</a></p>
+                            <p class="card-text"><a href="#"><i class="fas fa-caret-right"></i> Swimming Costume (5)</a></p>
+                            <p class="card-text"><a href="#"><i class="fas fa-caret-right"></i> Sports Tops &amp; Shoes (3)</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Recent Posts</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="media">
+                                    <img class="img-fluid mr-2" src="image/blog-small-01.jpg" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Totam Rem Aperiam Ea queab Ipsa.</h4>
+                                         <p><i class="fas fa-calendar"></i> 5 MARCH, 2016</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <img class="img-fluid mr-2" src="image/blog-small-02.jpg" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Totam Rem Aperiam Ea queab Ipsa.</h4>
+                                         <p><i class="fas fa-calendar"></i> 5 MARCH, 2016</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <img class="img-fluid mr-2" src="image/blog-small-03.jpg" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Totam Rem Aperiam Ea queab Ipsa.</h4>
+                                         <p><i class="fas fa-calendar"></i> 5 MARCH, 2016</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-sm-12 main-bar-blog">
+                    <div class="main-bar-blog-entire">
+                        <div class="thumbnail">
+                            <a href="blog-detail.html"><img src="image/blog-01.jpg" class="img-fluid" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-img-caption">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12 blog-img-caption-main-bar">
+                                    <h2><a href="blog-detail.html">Praesent justo dolor, lobortis quis, lobortis dignissim</a></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                                        omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                </div>
+                                <div class="col-md-3 col-sm-12 blog-img-caption-side-bar">
+                                    <h4>Details</h4>
+                                    <p><a href="blog-detail.html"><i class="fas fa-user"></i> Adam Smith</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-calendar"></i> Mar 20, 2016</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-tags"></i> Travels</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-envelope"></i> 8 Comments</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-bar-blog-entire1">
+                        <div class="thumbnail">
+                            <a href="blog-detail.html"><img src="image/blog-02.jpg" class="img-fluid" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-img-caption">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12 blog-img-caption-main-bar">
+                                    <h2><a href="blog-detail.html">Praesent justo dolor, lobortis quis, lobortis dignissim</a></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                                        omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                </div>
+                                <div class="col-md-3 col-sm-12 blog-img-caption-side-bar">
+                                    <p><a href="blog-detail.html"><i class="fas fa-user"></i> Adam Smith</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-calendar"></i> Mar 20, 2016</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-tags"></i> Travels</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-envelope"></i> 8 Comments</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-bar-blog-entire1">
+                        <div class="thumbnail">
+                            <a href="blog-detail.html"><img src="image/blog-03.jpg" class="img-fluid" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-img-caption">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12 blog-img-caption-main-bar">
+                                    <h2><a href="blog-detail.html">Praesent justo dolor, lobortis quis, lobortis dignissim</a></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                                        omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                </div>
+                                <div class="col-md-3 col-sm-12 blog-img-caption-side-bar">
+                                    <h4>Details</h4>
+                                    <p><a href="blog-detail.html"><i class="fas fa-user"></i> Adam Smith</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-calendar"></i> Mar 20, 2016</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-tags"></i> Travels</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-envelope"></i> 8 Comments</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-bar-blog-entire1">
+                        <div class="thumbnail">
+                            <a href="blog-detail.html"><img src="image/blog-04.jpg" class="img-fluid" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-img-caption">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12 blog-img-caption-main-bar">
+                                    <h2><a href="blog-detail.html">Praesent justo dolor, lobortis quis, lobortis dignissim</a></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                                        omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                </div>
+                                <div class="col-md-3 col-sm-12 blog-img-caption-side-bar">
+                                    <h4>Details</h4>
+                                    <p><a href="blog-detail.html"><i class="fas fa-user"></i> Adam Smith</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-calendar"></i> Mar 20, 2016</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-tags"></i> Travels</a></p>
+                                    <p><a href="blog-detail.html"><i class="fas fa-envelope"></i> 8 Comments</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-bar-blog-entire1">
+                        <div class="thumbnail">
+                            <a href="blog-detail.html"><img src="image/blog-05.jpg" class="img-fluid" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-img-caption">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12 blog-img-caption-main-bar">
+                                    <h2><a href="blog-detail.html">Praesent justo dolor, lobortis quis, lobortis dignissim</a></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                                        omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                </div>
+                                <div class="col-md-3 col-sm-12 blog-img-caption-side-bar">
+                                    <h4>Details</h4>
+                                    <p><a href="#"><i class="fas fa-user"></i> Adam Smith</a></p>
+                                    <p><a href="#"><i class="fas fa-calendar"></i> Mar 20, 2016</a></p>
+                                    <p><a href="#"><i class="fas fa-tags"></i> Travels</a></p>
+                                    <p><a href="#"><i class="fas fa-envelope"></i> 8 Comments</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-12">
+                    <div class="footerLink">
+                        <h5>Accessories</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Body care </a></li>
+                            <li><a href="#">Chambray </a></li>
+                            <li><a href="#">Floral </a></li>
+                            <li><a href="#">Rejuvination </a></li>
+                            <li><a href="#">Shaving </a></li>
+                            <li><a href="#">Toilette </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="footerLink">
+                        <h5>Brands</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Body care </a></li>
+                            <li><a href="#">Chambray </a></li>
+                            <li><a href="#">Floral </a></li>
+                            <li><a href="#">Rejuvination </a></li>
+                            <li><a href="#">Shaving </a></li>
+                            <li><a href="#">Toilette </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="footerLink">
+                        <h5>Accessories</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Body care </a></li>
+                            <li><a href="#">Chambray </a></li>
+                            <li><a href="#">Floral </a></li>
+                            <li><a href="#">Rejuvination </a></li>
+                            <li><a href="#">Shaving </a></li>
+                            <li><a href="#">Toilette </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="footerLink">
+                        <h5>Get in Touch</h5>
+                        <ul class="list-unstyled">
+                            <li>Call us at (555)-555-5555</li>
+                            <li><a href="mailto:#">support@iamabdus.com</a></li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="far fa-life-ring"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 offset-md-1 col-sm-12 d-flex justify-content-end">
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <h3>Sign up now</h3>
+                        <p>Enter your email address and get notified about new products. We hate spam!</p>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="your email address" aria-describedby="basic-addon2">
+                            <a href="#" class="input-group-addon" id="basic-addon2">go <i class="fas fa-chevron-right" style="color:#47bac1;"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </footer>
+
+    <Section id="copywrite">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <p> &copy; 2017 Copyright Bigbag Store Bootstrap Template by <a href="#">Abdus</a> </p>
+                </div>
+                <div class="col-md-5 col-sm-12 d-flex justify-content-end">
+                    <ul class="list-inline">
+                        <li><img src="image/card1.png" alt="visa" class="img-fluid"/></li>
+                        <li><img src="image/card2.png" alt="paypal" class="img-fluid"/></li>
+                        <li><img src="image/card3.png" alt="mastercard" class="img-fluid"/></li>
+                        <li><img src="image/card4.png" alt="discover" class="img-fluid"/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, slick -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="css/owl.carousel.min.js"></script>
+    <script src="css/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+    <script type="text/javascript" src="css/slick.js"></script>
+
+</body>
+</html>
